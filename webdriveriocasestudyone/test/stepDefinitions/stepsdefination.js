@@ -112,3 +112,7 @@ Then(/^The website displays appropiate search results as "([^"]*)"$/, function (
   var text = browser.getText('//*[@id="forecast_list_ul"]/table/tbody/tr/td[2]/b[1]/a');
   message.should.equal(text);
 });
+
+Then(/^The website displays appropiate title as "([^"]*)"$/, function (message) {
+  browser.getTitle().should.equal(message);
+});

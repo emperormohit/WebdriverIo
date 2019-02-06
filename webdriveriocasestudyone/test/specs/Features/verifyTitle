@@ -1,0 +1,5 @@
+Feature: Performing a check for the title of the page
+
+Scenario: Navigating to the website and verifying the title
+        Given User has navigated to Openweathermap site
+        Then The website displays appropiate title as "Сurrent weather and forecast - OpenWeatherMap"
